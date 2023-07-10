@@ -13,10 +13,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ค่าดัชนีมวลกาย</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-    <div>
+    <div class="container">
     <?php
     if( $result<=18.50){
         $c="ผอม";
@@ -36,12 +39,12 @@
     }
     ?>
 
-    <h2>ค่าดัชนีมวลกายของคุณคือ :</h2>
-
-    <b>BMI : </b><?php echo strval($result);?> bmi<br />
-    <b>อยู่ในเกณท์ : </b><?php echo $c;?><br />
-    <b>ภาวะเสี่ยงต่อโรค : </b><?php echo $s;?>  
-
+    <h2>ค่าดัชนีมวลกายของคุณคือ</h2>
+    <div class="bmi">
+        <b>BMI  </b><?php echo strval($result);?> bmi
+        <b>อยู่ในเกณท์  </b><?php echo $c;?>
+        <b>ภาวะเสี่ยงต่อโรค  </b><?php echo $s;?> 
     </div>
-    </body>
+</div>
+</body>
 </html>
