@@ -1,5 +1,5 @@
 <?php 
-class Person{
+class Body{
     public $height;
     public $weight;
 

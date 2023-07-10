@@ -1,8 +1,8 @@
 <?php
-    include_once 'person.php';
+    include_once 'Body.php';
     $weight=$_POST['weight'];
     $height=$_POST ['height'] ;
-    $bmiCal = new Person($height , $weight);
+    $bmiCal = new Body($height , $weight);
     $result = $bmiCal -> getBMI();
 ?>
 
